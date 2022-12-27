@@ -5,7 +5,7 @@ initial setup for Ubuntu server
 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub remote_username@server_ip_address`
 
-## Disable SSH
+## Disable password SSH
 
 `sudo nano /etc/ssh/sshd_config`
 
@@ -29,6 +29,10 @@ sudo sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
 ### Restart SSH
 
 `sudo systemctl restart ssh`
+
+## Change SSH port
+
+[todo]()
 
 ## References
 
